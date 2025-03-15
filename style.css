@@ -36,6 +36,7 @@ td{
 #q-num{
     padding-left:5%;
     font-size:22px;
+    color:red;
 }
 
 table{
@@ -56,7 +57,6 @@ width:100vw;
     
 .btn{
 top:10px;
-left:20px;
 width:auto;
 height:37px;
 position:relative;
@@ -64,7 +64,7 @@ font-size:20px;
 padding-top:-20px;
 box-shadow:2px 2px 4px 2px #aaaaaa;
 background-color:#ffffff;
-margin:10px;
+margin:5px;
 }
 
 #resultBtn{
