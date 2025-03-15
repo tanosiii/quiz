@@ -1,6 +1,21 @@
 @charset "utf-8";
+
+h2{
+font-family:sans-serif;
+}
+
 #table{
-    visibility: hidden;
+    display:none;
+}
+
+#image{
+    display:block;
+    width:90vw;
+}
+
+#image2{
+    display: none;
+    width:90vw;
 }
 
 .btn{
@@ -13,6 +28,7 @@
     background-color:#ffffff;
     color:black;
     margin:10px;
+    font-family:sans-serif;
 }
 
 #finishText{
@@ -25,30 +41,42 @@
     display:none;
 }
 
+#message{
+display: none;
+}
+
+#q-num{
+    padding-left: 5%;
+    font-size:22px;
+    font-family:sans-serif;
+}
+
+th{
+    font-family:sans-serif; 
+    width: 1%;
+}
+
 td{
     text-align:center;
+    font-family:sans-serif;
 }
 
 /* スマホ用のcss */
 @media screen and (max-width:480px){
 
-#q-num{
-    padding-left:5%;
-    font-size:22px;
-    color:black;
+.center{
+    text-align: center;
 }
 
-table{
+#table{
 width:60vw;
 margin:0 auto;
 }
     
 img{
 width:95vw;
-display:block;
 margin:auto;
 }    
-
 .center{
 text-align:center;
 width:100vw;
