@@ -4,9 +4,10 @@ h2{
 font-family:sans-serif;
 }
 
-#table{
+table{
     display:none;
     width:60vw;
+    table-layout:auto;
 }
 
 #image{
@@ -69,8 +70,12 @@ table{
     width:fit-content;
 }
     
-th,td{
-padding:2px 10px 2px 10px;
+th{
+padding:1px 3px 1px 3px;
+}
+
+td{
+padding:1px 3px 1px 3px;
 }
     
 img{
