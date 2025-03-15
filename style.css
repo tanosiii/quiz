@@ -32,10 +32,21 @@ td{
 /* スマホ用のcss */
 @media screen and (max-width:480px){
 
+table{
+width:60vw;
+margin:0 auto;
+}
+    
 img{
-width:100vw;
+width:95vw;
+display:block;
+margin:auto;
 }    
 
+.center{
+text-align:center;
+}
+    
 .btn{
 top:10px;
 left:20px;
@@ -46,6 +57,7 @@ font-size:20px;
 padding-top:-20px;
 box-shadow:2px 2px 4px 2px #aaaaaa;
 background-color:#ffffff;
+margin:10px;
 }
 
 #resultBtn{
