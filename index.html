@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ガッキーかガッキーじゃないかクイズ</title>
+
+    <audio id="btn-audio">
+        <source src="./btn-audio.mp3" type="audio/mp3">
+    </audio>
+</head>
+<body>
+    <div>
+	<h2>これはガッキー？</h2>
+    <div id="q-num">1/10問</div>
+    <img
+        id="image"
+        src="./hamabe1.jpg"
+        alt=""
+        max-width="100%"
+        height="autofocus"
+      />
+      <div>
+        <div id="finishText">問題終了！お疲れ様でした！</div>
+        <input type="button" class="btn" id="option-1" value="ガッキー">
+        <input type="button" class="btn" id="option-2" value="ガッキーじゃない">
+        <input type="button" class="btn" id="resultBtn" value="結果を見る">
+      </div>
+      <table border="1" id="table" width="200">
+        　<tr>
+        　　<th>問題</th>
+        　　<th>正誤</th>
+        　</tr>
+      </table>
+    </div>
+ 
+	<script src="./main.js"></script>
+</body>
+</html>
