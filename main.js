@@ -6,6 +6,8 @@ const tbl = document.getElementById("table");
 const resultBtn = document.getElementById("resultBtn");
 const finishText = document.getElementById("finishText");
 const btnAudio = document.getElementById("btn-audio");
+const message = document.getElementById("message");
+const img2 = document.getElementById("image2");
 
 //今何問目？
 let quizNumber = 1;
@@ -24,6 +26,9 @@ const answer = ["no","yes","yes"
     "yes"
 ]
 
+//自分の回答
+let myAns = [];
+
 //正誤の記録
 let record = [];
 
@@ -32,6 +37,7 @@ option1.addEventListener('click',()=>{
     
     //記録
     record[quizNumber-1] = answer[quizNumber-1] == "yes" ? true : false;
+    myAns[quizNumber-1] = "ガッキー";
 
     //効果音
     btnAudio.play();
@@ -49,6 +55,7 @@ option2.onclick = function(){
 
     //記録
     record[quizNumber-1] = answer[quizNumber-1] == "no" ? true : false;
+    myAns[quizNumber-1] = "ガッキーじゃない";
 
     //効果音
     btnAudio.play();
@@ -62,9 +69,15 @@ option2.onclick = function(){
          prepareForResult();
 };
 
-//”結果を見る”ボタンの表示
+//”結果を見る”ボタンが押された時
 resultBtn.onclick = function(){
-    tbl.style.visibility = "visible";
+   　tbl.style.display = "block";
+    resultBtn.style.display = "none";
+    message.style.visibility="hidden";
+    img2.style.display = "block";
+
+     //効果音
+     btnAudio.play();
 };
 
 //次の問題へ
@@ -87,7 +100,7 @@ function prepareForResult(){
     option1.style.display = "none";
     option2.style.display = "none";
     finishText.style.visibility = "visible";
-    //qnum.style.display = "none";
+    message.style.display = "block";
 
      // テーブルの作成
      for (var i = 0; i < 10; i++) {
@@ -95,14 +108,22 @@ function prepareForResult(){
         var tr = document.createElement('tr');
 
         // th・td部分のループ
-        for (var j = 0; j < 2; j++) {
+        for (var j = 0; j < 3; j++) {
         
               // td要素を生成
               var td = document.createElement('td');
               // td要素内にテキストを追加
               if(j==0)
+              {
                 td.textContent = i+1;
+                td.index = i;
+                td.onclick = click;
+                td.style.color = "blue";
+                td.style.textDecoration = "underline";
+              }
               else if(j==1)
+                td.textContent = myAns[i];
+              else if(j==2)
                     td.textContent = record[i]==true　?　"⭕️": "✖️";
                 
               // td要素をtr要素の子要素に追加
@@ -112,4 +133,11 @@ function prepareForResult(){
         // tr要素をtable要素の子要素に追加
         tbl.appendChild(tr);
     }
+}
+
+//結果発表後、数字に応じて画像を表示
+function click(e){
+    let elm = e.target;
+    img2.src = images[elm.index];
+    btnAudio.play(); 
 }
