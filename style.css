@@ -17,7 +17,7 @@
 }
 
 #finishText{
-    visibility: hidden;
+    display: none;
 }
 
 #resultBtn{
