@@ -4,8 +4,6 @@
 }
 
 .btn{
-    top:10px;
-    left:10px;
     width:auto;
     height:30px;
     position:relative;
@@ -14,6 +12,7 @@
     box-shadow:2px 2px 4px 2px #aaaaaa;
     background-color:#ffffff;
     color:black;
+    margin:10px;
 }
 
 #finishText{
@@ -36,7 +35,7 @@ td{
 #q-num{
     padding-left:5%;
     font-size:22px;
-    color:red;
+    color:black;
 }
 
 table{
