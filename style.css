@@ -7,7 +7,6 @@ font-family:sans-serif;
 #table{
     display:none;
     width:60vw;
-    margin:0 auto;
 }
 
 #image{
@@ -31,10 +30,6 @@ font-family:sans-serif;
     color:black;
     margin:10px;
     font-family:sans-serif;
-}
-
-#finishText{
-    display: none;
 }
 
 #resultBtn{
@@ -72,7 +67,6 @@ td{
 
 table{
     width:fit-content;
-    margin:0%;
 }
     
 th,td{
