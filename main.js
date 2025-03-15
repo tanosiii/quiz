@@ -4,7 +4,6 @@ const option2 = document.getElementById("option-2");
 const qnum = document.getElementById("q-num");
 const tbl = document.getElementById("table");
 const resultBtn = document.getElementById("resultBtn");
-const finishText = document.getElementById("finishText");
 const btnAudio = document.getElementById("btn-audio");
 const message = document.getElementById("message");
 const img2 = document.getElementById("image2");
@@ -99,7 +98,6 @@ function prepareForResult(){
     img.style.display = "none";
     option1.style.display = "none";
     option2.style.display = "none";
-    finishText.style.visibility = "visible";
     message.style.display = "block";
 
      // テーブルの作成
