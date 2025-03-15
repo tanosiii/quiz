@@ -32,6 +32,11 @@ td{
 /* スマホ用のcss */
 @media screen and (max-width:480px){
 
+#q-num{
+    padding-left:5%;
+    font-size:22px;
+}
+
 table{
 width:60vw;
 margin:0 auto;
