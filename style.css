@@ -32,6 +32,10 @@ td{
 /* スマホ用のcss */
 @media screen and (max-width:480px){
 
+img{
+width:100vw;
+}    
+
 .btn{
 top:10px;
 left:20px;
