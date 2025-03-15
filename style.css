@@ -13,6 +13,7 @@
     padding-top:0px;
     box-shadow:2px 2px 4px 2px #aaaaaa;
     background-color:#ffffff;
+    color:black;
 }
 
 #finishText{
@@ -50,6 +51,7 @@ margin:auto;
 
 .center{
 text-align:center;
+width:100vw;
 }
     
 .btn{
